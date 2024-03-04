@@ -6,7 +6,7 @@ function calcularGanancias( montoInicial, porcentaje, cantidadMeses, sumaDolar){
     
     for( i=1; i<=cantidadMeses; i++ ){
         ganancia    = porcentaje * nuevoTotal;
-        nuevoTotal  = nuevoTotal + ganancia;
+        nuevoTotal  = nuevoTotal + ganancia + dolarExtra;
         console.log( "Mes:" + i + ", Ganancia:" + ganancia.toFixed(2) + ", Nuevo Total:" + nuevoTotal.toFixed(2) );
     }
 }
